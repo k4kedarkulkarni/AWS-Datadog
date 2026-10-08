@@ -1,0 +1,26 @@
+{
+  "TableName": "AnyCompanyAgentRisk",
+  "BillingMode": "PAY_PER_REQUEST",
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "principalId",
+      "AttributeType": "S"
+    }
+  ],
+  "KeySchema": [
+    {
+      "AttributeName": "principalId",
+      "KeyType": "HASH"
+    }
+  ],
+  "Tags": [
+    {
+      "Key": "Application",
+      "Value": "ComposableAgentsWorkshop"
+    },
+    {
+      "Key": "Layer",
+      "Value": "L4-Security-AIGuard"
+    }
+  ]
+}
